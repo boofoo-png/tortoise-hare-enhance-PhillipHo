@@ -134,3 +134,12 @@ function showResult() {
 }
 
 renderTrack();
+
+//adding a scoreboard
+
+const scoreboard = document.createElement("div");
+trackE1.before(scoreboard);
+
+let hareWin = 0;
+let tortoiseWin = 0;
+
