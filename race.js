@@ -143,3 +143,10 @@ trackE1.before(scoreboard);
 let hareWin = 0;
 let tortoiseWin = 0;
 
+function updateScoreboard(winner) {
+    if (winner === "hare") {
+        hareWin++;
+    } else if (winner === "tortoise") {
+        tortoiseWin++;
+    }
+}
