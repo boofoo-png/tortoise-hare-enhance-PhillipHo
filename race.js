@@ -138,7 +138,7 @@ renderTrack();
 //adding a scoreboard
 
 const scoreboard = document.createElement("div");
-trackE1.before(scoreboard);
+trackEl.before(scoreboard);
 
 let hareWin = 0;
 let tortoiseWin = 0;
@@ -149,4 +149,12 @@ function updateScoreboard(winner) {
     } else if (winner === "tortoise") {
         tortoiseWin++;
     }
+
+    scoreboard.innerHTML = `
+<h1>Scoreboard</h1>
+<h3>Hare: ${hareWin}</h3>
+<h3>Tortoise: ${tortoiseWin}</h3>
+`;
 }
+
+updateScoreboard();
